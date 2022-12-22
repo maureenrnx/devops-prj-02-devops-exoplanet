@@ -3,12 +3,11 @@
 Description
 
 -Realisation of :
- * pipeline
- * ci
- * features branch
- * branch policies
 
- -Install Dependencies
-  npm i
+- pipeline
+- ci
+- features branch
+- branch policies
 
-  
+-Install Dependencies
+npm i
