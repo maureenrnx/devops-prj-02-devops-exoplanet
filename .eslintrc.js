@@ -1,16 +1,15 @@
 module.exports = {
-  env: {
-    browser: true,
-    commonjs: true,
-    es2021: true,
-  },
-  extends: ["prettier"],
-  overrides: [],
-  parserOptions: {
-    ecmaVersion: "latest",
-  },
-  rules: {
-    "linebreak-style": ["error", "windows"],
-    semi: ["error", "always"],
-  },
-};
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+    }
+}

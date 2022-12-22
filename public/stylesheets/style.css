@@ -1,10 +1,12 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-footer, header {
+footer,
+header {
   background-color: black;
   color: white;
   padding-bottom: 20px;
@@ -12,8 +14,8 @@ footer, header {
 }
 
 header nav {
-  background-color:sandybrown;
-  padding : 5px;
+  background-color: sandybrown;
+  padding: 5px;
   text-align: left;
 }
 
@@ -26,21 +28,23 @@ header nav ul li {
 section {
   background-color: steelblue;
   padding-bottom: 20px;
-  padding-left:50px;
+  padding-left: 50px;
 }
 
 h1 {
   text-align: center;
 }
 
-p, h3, ul {
-  padding : 10px;
+p,
+h3,
+ul {
+  padding: 10px;
 }
 
 .img {
   width: 300px;
   height: 300px;
-  padding : 10px;
+  padding: 10px;
 }
 
 #imgError {
@@ -48,18 +52,30 @@ p, h3, ul {
   justify-content: center;
 }
 
-
-table, th, td {
+table,
+th,
+td {
   border: solid 1px;
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   text-align: center;
-  padding : 5px;
+  padding: 5px;
 }
 
-form  { display: table;      }
-form div     { display: table-row;  }
-form label { display: table-cell; padding: 5px;}
-form input { display: table-cell; padding: 5px;}
+form {
+  display: table;
+}
+form div {
+  display: table-row;
+}
+form label {
+  display: table-cell;
+  padding: 5px;
+}
+form input {
+  display: table-cell;
+  padding: 5px;
+}

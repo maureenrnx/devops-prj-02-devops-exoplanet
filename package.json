@@ -29,7 +29,9 @@
   "main": "app.js",
   "devDependencies": {
     "commitizen": "^4.2.6",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.30.0",
+    "prettier": "2.8.1"
   },
   "repository": {
     "type": "git",
