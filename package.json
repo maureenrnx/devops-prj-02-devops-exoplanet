@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e '*' ./bin/www"
+    "start": "nodemon -e '*' ./bin/www",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "code:fix": "prettier --write . && eslint --fix .",
+    "commit": "cz",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
