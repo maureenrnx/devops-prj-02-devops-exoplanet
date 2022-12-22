@@ -47,6 +47,7 @@
   </form>
 </section>
 <section>
+<<<<<<< HEAD
   <h1>Recherche d'une Exoplanète déjà découverte</h1>
 
   <form method="get" action="/exoplanets/search">
@@ -58,3 +59,17 @@
     <p> Veuillez entrer 3 caractères au minimum </p>
   {{/if}}
 </section>
+=======
+    <h1>Recherche d'une Exoplanète déjà découverte</h1>
+
+    <form method="get" action="/exoplanets/search">
+        <input type="text" name="uniqueNameExoplanet">
+        <input type="submit">
+    </form>
+
+    {{#if min3Char }}
+    {{else}}
+    <p> Veuillez entrer 3 caractères au minimum </p> 
+    {{/if}}
+</section>
+>>>>>>> 31fa553f67e6b4b8087020a745ad5dbb068c000e
