@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1671745296486" clover="3.2.0">
-  <project timestamp="1671745296486" name="All files">
+<coverage generated="1671742631334" clover="3.2.0">
+  <project timestamp="1671742631334" name="All files">
     <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
     <file name="testNameExoplanet.js" path="C:\Users\steph\Desktop\devops-prj-02-devops-exoplanet\test\testNameExoplanet.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
