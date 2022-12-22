@@ -4,9 +4,17 @@
   "private": true,
   "scripts": {
     "start": "nodemon -e '*' ./bin/www",
-    "commit": "cz"
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "code:fix": "prettier --write . && eslint --fix .",
+    "commit": "cz",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
+    "commitizen": "^4.2.6",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
