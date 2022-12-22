@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e '*' ./bin/www"
+    "start": "nodemon -e '*' ./bin/www",
+    "commit": "cz"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
