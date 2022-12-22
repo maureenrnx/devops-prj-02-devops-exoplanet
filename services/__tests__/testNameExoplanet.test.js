@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const nameExoplanet = require ("../testNameExoplanet");
 
 describe("test exoplanetName before adding" , () =>{
