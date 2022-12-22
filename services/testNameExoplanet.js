@@ -3,7 +3,11 @@
 module.exports = function (name) {
     if(name === undefined )
     {return false;}
-      return true;
+      
+    if(name === name.toUpperCase())
+    {return true}
+
+    return false;
 } ;
 
 
