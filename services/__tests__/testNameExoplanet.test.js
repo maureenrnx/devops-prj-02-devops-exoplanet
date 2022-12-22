@@ -8,15 +8,19 @@ describe("test exoplanetName before adding" , () =>{
 
     });
 
-    // it("test2: should return true if name is in uppercase" , () =>{
-    //     expect(nameExoplanet('EXOPLANETNAME')).toBe(true);
+    it("test2: should return true if name is in uppercase" , () =>{
+        expect(checkPlanetName('EXOPLANETNAME')).toBe(true);
+    });
 
-    // });
-
-    // it("test3 : should return false if name is not in uppercase" , () => {
-    //     expect(nameExoplanet('exoplanetName').toBe(false))
-    // });
-
+    it("test3 : should return false if name is not in uppercase" , () =>{
+        expect(checkPlanetName('exoplanetname')).toBe(false);
+    });
+ 
+    
+    it("test4 : should return true if name is uppercase contains numbers" , () =>{
+        expect(checkPlanetName('exoplanetname745')).toBe(false);
+    });
+    
 });
 
 
