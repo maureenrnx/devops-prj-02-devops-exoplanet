@@ -1,9 +1,10 @@
 
 
-module.exports.checkPlanetName = (name) => {
-  if(name.length<1){return false;}
-    return true;
-};
+module.exports = function (name) {
+    if(name === undefined )
+    {return false;}
+      return true;
+} ;
 
 
 
