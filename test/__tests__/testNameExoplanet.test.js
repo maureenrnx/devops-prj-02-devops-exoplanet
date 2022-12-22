@@ -1,4 +1,4 @@
-const {nameExoplanet} = require ("../testNameExoplanet");
+const nameExoplanet = require ("../testNameExoplanet");
 
 describe("test exoplanetName before adding" , () =>{
 
@@ -6,6 +6,10 @@ describe("test exoplanetName before adding" , () =>{
         expect(nameExoplanet()).toBe(true);
 
     });
+
+    it("test2 : should return false" , () => {
+        expect(nameExoplanet().toBe(false))
+    })
 
 });
 

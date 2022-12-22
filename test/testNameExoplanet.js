@@ -1,5 +1,3 @@
-const testNameExoplanet = () => {
-    return false;
-}
-
-module.exports = testNameExoplanet;
+module.exports = function () {
+    return true;
+};
