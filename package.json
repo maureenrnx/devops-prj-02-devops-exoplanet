@@ -16,7 +16,10 @@
   },
   "description": "devops projet 02 exoplanet",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maureenrnx/devops-prj-02-devops-exoplanet.git"
@@ -29,5 +32,10 @@
   "bugs": {
     "url": "https://github.com/maureenrnx/devops-prj-02-devops-exoplanet/issues"
   },
-  "homepage": "https://github.com/maureenrnx/devops-prj-02-devops-exoplanet#readme"
+  "homepage": "https://github.com/maureenrnx/devops-prj-02-devops-exoplanet#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
