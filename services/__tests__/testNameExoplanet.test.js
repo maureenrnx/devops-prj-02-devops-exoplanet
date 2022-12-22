@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+const { it } = require("node:test");
 const nameExoplanet = require ("../testNameExoplanet");
 
 describe("test exoplanetName before adding" , () =>{
@@ -9,7 +11,9 @@ describe("test exoplanetName before adding" , () =>{
 
     it("test2 : should return false" , () => {
         expect(nameExoplanet().toBe(false))
-    })
+    });
+
+    it()
 
 });
 

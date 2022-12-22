@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 
-const checkPlanetName = require("../test/__tests__/testNameExoplanet.test");
+const checkPlanetName = require("../services/__tests__/testNameExoplanet.test");
 const Exoplanet = require('../models/Exoplanet.js');
 
 /* GET exoplanets index. */
