@@ -20,6 +20,12 @@ describe("test exoplanetName before adding" , () =>{
     it("test4 : should return true if name is uppercase contains numbers" , () =>{
         expect(checkPlanetName('exoplanetname745')).toBe(false);
     });
+
+    it("test5 : returns false if name contains special characters other than . and - " , () =>{
+        expect(checkPlanetName('exoplanetname745_')).toBe(false);
+    });
+
+    
     
 });
 

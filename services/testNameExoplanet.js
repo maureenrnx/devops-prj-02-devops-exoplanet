@@ -5,7 +5,7 @@ module.exports = function (name) {
     {return false;}
  
 // eslint-disable-next-line no-useless-escape
-const regex = /^([A-Z0-9]*)$/;
+const regex = /^([A-Z0-9\-\.]*)$/;
  if(name.match(regex)) return true;
 
       return false;
