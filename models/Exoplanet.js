@@ -21,6 +21,4 @@ module.exports.search = (uniqueName) => {
   return exoplanetList;
 };
 
-module.exports.nameExoplanet = () => {
-  return true;
-}
+
