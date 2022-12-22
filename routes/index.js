@@ -4,7 +4,7 @@ const router = express.Router();
 // const messagesTable = []
 
 /* GET home page. */
-router.get("/", (req, res, next) => {
+router.get("/", (req, res) => {
   res.render("index", {
     exoplanetsTable: [
       "Trappist-1-d",
