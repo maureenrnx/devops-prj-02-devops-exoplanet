@@ -1,3 +1,3 @@
-module.exports = function () {
-    return true;
+module.exports = function (name) {
+    return name === name.toUpperCase();
 };
