@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<coverage generated="1671756252249" clover="3.2.0">
-  <project timestamp="1671756252249" name="All files">
-=======
-<coverage generated="1671758742254" clover="3.2.0">
-  <project timestamp="1671758742255" name="All files">
->>>>>>> b9107fec9188fc35c5ed1fb3a83a7f9123984dc5
+<coverage generated="1671760351086" clover="3.2.0">
+  <project timestamp="1671760351087" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="11" coveredelements="11" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
-    <file name="testNameExoplanet.js" path="C:\Users\steph\Desktop\devops-prj-02-devops-exoplanet\services\testNameExoplanet.js">
+    <file name="testNameExoplanet.js" path="/home/maureen/Documents/Vinci cours/DevOps/devops-prj-02-devops-exoplanet/services/testNameExoplanet.js">
       <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="3" count="1" type="stmt"/>
       <line num="7" count="5" type="stmt"/>
       <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="10" count="2" type="stmt"/>
-=======
+=========
       <line num="2" count="1" type="stmt"/>
-      <line num="4" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="5" count="1" type="stmt"/>
       <line num="9" count="4" type="stmt"/>
       <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="3" type="stmt"/>
->>>>>>> b9107fec9188fc35c5ed1fb3a83a7f9123984dc5
+>>>>>>>>> Temporary merge branch 2
     </file>
   </project>
 </coverage>
