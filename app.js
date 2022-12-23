@@ -1,50 +1,41 @@
-/* eslint-disable no-undef */
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const express = require('express');
+const createError = require('http-errors');
+const path = require('path');
+const logger = require('morgan');
 
-var indexRouter = require("./routes/index");
-var forumRouter = require("./routes/forum");
-var exoplanetsRouter = require("./routes/exoplanets");
+// Define here controllers/routers files
+const indexRouter = require("./routes/index.js");
+const exoplanetsRouter = require("./routes/exoplanets.js");
+const forumRouter = require('./routes/forum.js');
 
-var app = express();
 
-// register partials views
-// important to do that before set engine
-// BEFORE app.set('view engine', 'hbs');
-var hbs = require("hbs");
-hbs.registerPartials(__dirname + "/views/partials");
+const app = express();
+// Azure or others Cloud service are going to define a port in process.env.PORT depending on hosting
+const port = process.env.PORT || 3000;
 
-// view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "hbs");
+// Setup views folder and handlebar engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
 
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(logger('dev')); // Log each request
+app.use(express.urlencoded({ extended: false })); // Decode form values
+app.use(express.static(path.join(__dirname, 'public'))); // Get static files from public folder
 
+
+// Define routes used by routers
 app.use("/", indexRouter);
-app.use("/forum", forumRouter);
 app.use("/exoplanets", exoplanetsRouter);
+app.use("/forum", forumRouter);
 
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  next(createError(404));
+
+// Create error on page not found
+app.use((req, res, next) => next(createError(404)));
+
+// Show error hbs page
+app.use((error, req, res) => {
+  res.status(error.status || 500);
+  res.render('error', { error });
 });
 
-// error handler
-app.use(function (err, req, res) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
-});
-
-module.exports = app;
+// Launch server
+app.listen(port, () => console.log('App listening on port ' + port));
