@@ -13,12 +13,12 @@ module.exports.save = (data) => {
 module.exports.search = (uniqueName) => {
   const exoplanetList = [];
   for (let exoplanet of exoplanetsTable) {
-    if (exoplanet.uniqueName.toUpperCase().startsWith(uniqueName.toUpperCase())) {
+    if (
+      exoplanet.uniqueName.toUpperCase().startsWith(uniqueName.toUpperCase())
+    ) {
       console.log("found " + JSON.stringify(exoplanet));
-      exoplanetList.push(exoplanet)
+      exoplanetList.push(exoplanet);
     }
   }
   return exoplanetList;
 };
-
-
