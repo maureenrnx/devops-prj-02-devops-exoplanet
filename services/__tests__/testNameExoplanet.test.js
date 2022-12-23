@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const checkPlanetName = require("../testNameExoplanet");
 
-describe("test exoplanetName before adding", () => {
+ describe("test exoplanetName before adding", () => {
   it("test1: should return false if name is empty", () => {
     expect(checkPlanetName()).toBe(false);
   });
@@ -15,10 +15,15 @@ describe("test exoplanetName before adding", () => {
   });
 
   it("test4 : should return true if name is uppercase contains numbers", () => {
-    expect(checkPlanetName("exoplanetname745")).toBe(false);
+    expect(checkPlanetName("EXOPLANET745")).toBe(true);
   });
 
   it("test5 : returns false if name contains special characters other than . and - ", () => {
-    expect(checkPlanetName("exoplanetname745_")).toBe(false);
+    expect(checkPlanetName("Trappiste$****01****-00")).toBe(false);
   });
+ 
+  it("test6 : should return true if name is correct", () => {
+    expect(checkPlanetName("TRAPIST-01.")).toBe(true);
+  });
+ 
 });
