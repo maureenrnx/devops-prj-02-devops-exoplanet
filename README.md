@@ -2,14 +2,21 @@
 
 
 # PREREQUISITES
-  *  Node js/NPM 
 
+  ```
+  Node js/NPM 
+  ```
 # INSTALLING
-  *  npm i 
+
+  ```
+  npm i 
+  ```
 
 # START APPLICATION 
-  *  npm start 
 
+  ```
+  npm start 
+  ```
 
 # DESCRIPTION
 
@@ -18,11 +25,11 @@ Our objective was to realize tests allowing to verify the names of exoplanets th
 
 for this we have set up :
 
-- pipeline
-- Continious Integration
-- features branch
-- branch policies
-- TDD development with merge Request
+- [pipeline]
+- [Continious Integration]
+- [features branch]
+- [branch policies]
+- [TDD development with merge Request]
 
 
 
