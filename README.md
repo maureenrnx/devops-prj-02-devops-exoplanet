@@ -2,14 +2,13 @@
 
 
 # PREREQUISITES
- || Node js/ NPM ||
+  *  Node js/NPM 
 
 # INSTALLING
-    || npm i ||
+  *  npm i 
 
 # START APPLICATION 
-
-   npm start 
+  *  npm start 
 
 
 # DESCRIPTION
