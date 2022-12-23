@@ -1,18 +1,18 @@
 # PROJET 02  DEVOPS  EXOPLANETS
 
 
-# PREREQUISITES
+# Prerequisites
 
   ```
   Node js/NPM 
   ```
-# INSTALLING
+# Installing
 
   ```
   npm i 
   ```
 
-# START APPLICATION 
+# Start Appliction
 
   ```
   npm start 
