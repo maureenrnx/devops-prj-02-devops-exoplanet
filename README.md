@@ -1,27 +1,29 @@
-# devops-prj-02-devops-exoplanet
+# PROJET 02  DEVOPS  EXOPLANETS
 
-Description
 
--Realisation of :
+# PREREQUISITES
+  *  Node js/NPM 
+
+# INSTALLING
+  *  npm i 
+
+# START APPLICATION 
+  *  npm start 
+
+
+# DESCRIPTION
+
+It is a site presenting exoplanets and allowing to list the discovered exoplanets. 
+Our objective was to realize tests allowing to verify the names of exoplanets that a user could add.
+
+for this we have set up :
 
 - pipeline
-- ci
+- Continious Integration
 - features branch
 - branch policies
-
--Install Dependencies
-npm i
+- TDD development with merge Request
 
 
-"start": "node app.js",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "code:fix": "prettier --write . && eslint --fix .",
-    "commit": "cz",
-    "test": "jest --coverage",
-    "test:watch": "jest --watchAll"
 
 
-    "commitizen": "^4.2.6",
