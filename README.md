@@ -1,15 +1,22 @@
 # PROJET 02  DEVOPS  EXOPLANETS
 
 
-# PREREQUISITES
-  *  Node js/NPM 
+# Prerequisites
 
-# INSTALLING
-  *  npm i 
+  ```
+  Node js/NPM 
+  ```
+# Installing
 
-# START APPLICATION 
-  *  npm start 
+  ```
+  npm i 
+  ```
 
+# Start Appliction
+
+  ```
+  npm start 
+  ```
 
 # DESCRIPTION
 
@@ -18,11 +25,11 @@ Our objective was to realize tests allowing to verify the names of exoplanets th
 
 for this we have set up :
 
-- pipeline
-- Continious Integration
-- features branch
-- branch policies
-- TDD development with merge Request
+- [pipeline]
+- [Continious Integration]
+- [features branch]
+- [branch policies]
+- [TDD development with merge Request]
 
 
 
